@@ -8,15 +8,15 @@ uint64_t binstrToInt(const char* binstr)
     while(binstr[bit] != '\0')
     {
 
-    binstr[bit] == '1' ? sum |= 1 : sum;
+    binstr[bit] == '1' ? result |= 1 : result;
     bit++;
-    binstr[bit] != '\0' ? sum <<= 1 : sum;
+    binstr[bit] != '\0' ? result <<= 1 : result;
    }
 
-   unsigned int hex_ip_addr = (sum & 0xff000000) + (sum & 0x00ff0000) + (sum & 0x0000ff00) + (sum & 0x000000ff);
+   unsigned int hex_ip_addr = (result & 0xff000000) + (result & 0x00ff0000) + (result & 0x0000ff00) + (result & 0x000000ff);
    printf("IP adresa iz tabele pretvorena u heksadecimalan format: %x\n", hex_ip_addr);
 
-   return sum;
+   return result;
 }
 
 int main()
