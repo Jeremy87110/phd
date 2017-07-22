@@ -1,0 +1,6 @@
+9 package simple;
+10
+11 import com.maxeler.maxcompiler.v2.build.EngineParameters;
+12 import com.maxeler.maxcompiler.v2.kernelcompiler.Kernel;
+13 import com.maxeler.maxcompiler.v2.managers.standard.Manager;
+14 import com.maxeler.maxcompiler.v2.managers.standard.Manager.IOType;
